@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.calculator.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_strengthFragment"
+            app:destination="@id/strengthFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_startFragment_to_densityFragment"
+            app:destination="@id/densityFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_startFragment_to_calcDateFragment"
+            app:destination="@id/calcDateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/strengthFragment"
+        android:name="com.example.calculator.fragments.calc_strength.StrengthFragment"
+        android:label="fragment_strength"
+        tools:layout="@layout/fragment_strength" >
+        <action
+            android:id="@+id/action_strengthFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/densityFragment"
+        android:name="com.example.calculator.fragments.calc_density.DensityFragment"
+        android:label="fragment_density"
+        tools:layout="@layout/fragment_density" >
+        <action
+            android:id="@+id/action_densityFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/calcDateFragment"
+        android:name="com.example.calculator.fragments.calc_date.DateFragment"
+        android:label="fragment_calc_date"
+        tools:layout="@layout/fragment_date" >
+        <action
+            android:id="@+id/action_calcDateFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+</navigation>

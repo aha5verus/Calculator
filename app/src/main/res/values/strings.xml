@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_strength_density">Расчет прочности и плотности контрольных образцов</string>
+    <string name="title_calcdate">Калькулятор даты</string>
+    <string name="btn_start_strength">Расчет прочности</string>
+    <string name="btn_start_density">Расчет плотности</string>
+    <string name="btn_start_calcdate">Расчет даты</string>
+    <string name="edt_strength_first">Прочность(МПа) 1:</string>
+    <string name="edt_strength_second">Прочность(МПа) 2:</string>
+    <string name="tv_strength">Расчет прочности контрольных образцов</string>
+    <string name="edt_density_first">Масса(кг) 1:</string>
+    <string name="edt_density_second">Масса(кг) 2:</string>
+    <string name="tv_density">Расчет плотности контрольных образцов</string>
+    <string name="btn_calc">Вычислить</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="tv_calcdate">Расчет даты</string>
+    <string name="tv_controldate">Даты контроля</string>
+    <string name="tv_selectdate">Дата заливки:&#160;</string>
+    <string name="tv_7days">7 суток:</string>
+    <string name="tv_28days">28 суток:</string>
+    <string name="result_info">Результат:</string>
+    <string name="btn_select_date">Выбрать дату</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startScreenLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".StartFragment">
+
+
+    <TextView
+        android:id="@+id/titleStartView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="23dp"
+        android:text="@string/title_strength_density"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStrengthFrag"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_start_strength"
+        app:layout_constraintEnd_toEndOf="@+id/titleStartView"
+        app:layout_constraintStart_toStartOf="@+id/titleStartView"
+        app:layout_constraintTop_toBottomOf="@+id/titleStartView" />
+
+    <Button
+        android:id="@+id/btnDensityFrag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_start_density"
+        app:layout_constraintEnd_toEndOf="@+id/btnStrengthFrag"
+        app:layout_constraintStart_toStartOf="@+id/btnStrengthFrag"
+        app:layout_constraintTop_toBottomOf="@+id/btnStrengthFrag" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/title_calcdate"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/titleStartView"
+        app:layout_constraintStart_toStartOf="@+id/titleStartView"
+        app:layout_constraintTop_toBottomOf="@+id/btnDensityFrag" />
+
+    <Button
+        android:id="@+id/btnDateFrag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_start_calcdate"
+        app:layout_constraintEnd_toEndOf="@+id/btnDensityFrag"
+        app:layout_constraintStart_toStartOf="@+id/btnDensityFrag"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
